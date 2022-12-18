@@ -12,11 +12,11 @@ namespace Snake
             Walls walls = new Walls(80, 25);
             walls.Draw();
 	
-            Point p = new Point(4, 5, '*');
+            Point p = new Point(4, 5, 'D');
             Snake snake = new Snake(p, 4, Direction.RIGHT);
             snake.Draw();
 
-            FoodCreator foodCreator = new FoodCreator(80, 25, '$');
+            FoodCreator foodCreator = new FoodCreator(80, 25, 'О');
             Point food = foodCreator.CreateFood();
             food.Draw();
 
