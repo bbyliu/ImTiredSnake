@@ -8,8 +8,6 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            //Console.SetWindowSize(80, 25);
-            //Console.SetBufferSize(80, 25);
 
             Walls walls = new Walls(80, 25);
             walls.Draw();
@@ -48,10 +46,5 @@ namespace Snake
             Console.ReadLine();
         }
         
-        static void WriteText(String text, int xOffset, int yOffset)
-        {
-            Console.SetCursorPosition(xOffset, yOffset);
-            Console.WriteLine(text);
-        }
     }
 }
